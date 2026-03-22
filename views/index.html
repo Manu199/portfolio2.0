@@ -27,11 +27,12 @@
     
     <!-- HERO -->
     <section id="hero">
+        <!-- HERO LEFT -->
         <div class="hero-left">
             <div class="hero-label">Full-Stack Developer — Italy</div>
             <h1>MANVINDER<br>
                 <span class="outline">SINGH</span><br>
-                <span class="title">DEV.</span>
+                <span class="lime">DEV.</span>
             </h1>
             <p class="hero-desc">
                 I value time and structure, making every minute count toward growth and improvement. My goal is to learn through real-world experience while delivering results that exceed expectations. I specialize in clean, minimal designs paired with intuitive functionality. I continuously challenge myself to evolve, adapt, and transform ideas into practical, high-impact solutions.
@@ -45,7 +46,29 @@
                 <div><div class="hs-num">12+</div><div class="hs-label">Projexts</div></div>
                 <div><div class="hs-num">∞</div><div class="hs-label">Coffee</div></div>
             </div>
+        </div>   
+
+        <!-- TERMINAL CARD -->
+        <div class="hero-terminal">
+                <div class="ht-bar">
+                    <span class="ht-dot" style="background:#ff5f57"></span>
+                    <span class="ht-dot" style="background:#febc2e"></span>
+                    <span class="ht-dot" style="background:#28c840"></span>
+                    <span class="ht-filename">api.controller.js</span>
+                </div>
+                <div class="ht-body">
+                    <div class="ht-line"><span class="ht-cmt">// GET /products/:id</span></div>
+                    <div class="ht-line"><span class="ht-kw">const</span> <span class="ht-fn">getProduct</span> = <span class="ht-kw">async</span> (req, res) => {</div>
+                    <div class="ht-line">  <span class="ht-kw">const</span> { id } = req.<span class="ht-var">params</span>;</div>
+                    <div class="ht-line">  <span class="ht-kw">const</span> product = <span class="ht-kw">await</span> <span class="ht-fn">Product</span>.<span class="ht-fn">findById</span>(id);</div>
+                    <div class="ht-line">  <span class="ht-kw">if</span> (!product) <span class="ht-kw">return</span> res</div>
+                    <div class="ht-line">    .<span class="ht-fn">status</span>(<span class="ht-num">404</span>).<span class="ht-fn">json</span>({ error: <span class="ht-str">'Not found'</span> });</div>
+                    <div class="ht-line">  res.<span class="ht-fn">json</span>({ success: <span class="ht-num">true</span>, product });</div>
+                    <div class="ht-line">};</div>
+                    <div class="ht-line"><span class="ht-fn">module</span>.<span class="ht-var">exports</span> = { getProduct };</div>
+                </div>
         </div>
+    <!-- HERO RIGHT -->
         <div class="hero-right">
             <div class="hero-num">01</div>
             <ul class="stack-list">
@@ -60,21 +83,23 @@
                 <div><div class="hs-num">12</div><div class="hs-label">Projects</div></div>
             </div>
         </div>
+        
     </section>
     
     <!-- MARQUEE -->
     <div class="marquee-wrap">
         <div class="marquee-track">
             <span class="marquee-item">Full-Stack Development</span><span class="marquee-sep">✦</span>
-            <span class="marquee-item">React &amp; Vue</span><span class="marquee-sep">✦</span>
+            <span class="marquee-item">Vite &amp; Vue</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Laravel &amp; Node.js</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Docker &amp; DevOps</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Database Design</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">REST API</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Open Source</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Home Lab</span><span class="marquee-sep">✦</span>
+
             <span class="marquee-item">Full-Stack Development</span><span class="marquee-sep">✦</span>
-            <span class="marquee-item">React &amp; Vue</span><span class="marquee-sep">✦</span>
+            <span class="marquee-item">Vite &amp; Vue</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Laravel &amp; Node.js</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Docker &amp; DevOps</span><span class="marquee-sep">✦</span>
             <span class="marquee-item">Database Design</span><span class="marquee-sep">✦</span>

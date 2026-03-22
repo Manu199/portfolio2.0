@@ -11,3 +11,4 @@ document.addEventListener('mousemove',e=>{
   ring.style.left=rx+'px';ring.style.top=ry+'px';
   requestAnimationFrame(tick);
 })();
+

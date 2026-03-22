@@ -1,12 +1,12 @@
 #hero {
-    min-height: 90vh;
+    height: 95.3vh;
     display: grid;
-    grid-template-columns: 1fr 420px;
+    grid-template-columns: 1fr 440px;
     position: relative;
     overflow: hidden;
 }
 .hero-left {
-    padding: 8rem 3rem 4rem;
+    padding: 6rem 5rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -32,7 +32,7 @@
 }
 h1 {
     font-family: 'Bebas Neue',sans-serif;
-    font-size: clamp(5rem,11vw,11rem);
+    font-size: clamp(4rem,8vw,8rem);
     line-height: 0.9;
     letter-spacing: -1px;
     color: #fff;
@@ -169,10 +169,11 @@ h1 .lime {
     padding: 0.9rem 0;
     overflow: hidden;
     white-space: nowrap;
+    margin-top: -10px;
 }
 .marquee-track { 
     display:inline-flex;
-    animation:marquee 18s linear infinitel;
+    animation:marquee 18s linear infinite;
 }
 .marquee-item {
     font-family: 'Bebas Neue',sans-serif;
@@ -185,4 +186,7 @@ h1 .lime {
     opacity: 0.4;
 }
 
-@keyframes marquee {from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marquee {
+    from{ transform:translateX(0); } 
+    to{ transform:translateX(-50%); }
+}
