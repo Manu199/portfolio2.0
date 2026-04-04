@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 440px;
     position: relative;
     overflow: hidden;
+    /* z-index: 999; */
 }
 .hero-left {
     padding: 6rem 5rem 4rem;
@@ -44,6 +45,9 @@ h1 .outline {
 h1 .lime {
     color: var(--lime);
 }
+button{
+    cursor: none;
+}
 .hero-desc {
     font-size: 0.95rem;
     color: rgba(255,255,255,0.5);
@@ -69,7 +73,11 @@ h1 .lime {
     text-transform: uppercase;
     transition: transform 0.2s,box-shadow 0.2s;
     clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+    cursor: none;
 }
+/* .btn-lime:hover, #cursor{
+    background-color: black;
+} */
 .btn-lime:hover {
     transform: translate(-2px,-2px);
     box-shadow: 4px 4px 0 rgba(200,255,0,0.3);
@@ -122,7 +130,7 @@ h1 .lime {
 .stack-list {
     list-style: none;
     position: relative;
-    z-index:1;
+    z-index: 1;
 }
 .stack-list li {
     display: flex;
@@ -169,7 +177,7 @@ h1 .lime {
     padding: 0.9rem 0;
     overflow: hidden;
     white-space: nowrap;
-    margin-top: -10px;
+    margin-top: -9px;
 }
 .marquee-track { 
     display:inline-flex;
@@ -189,4 +197,20 @@ h1 .lime {
 @keyframes marquee {
     from{ transform:translateX(0); } 
     to{ transform:translateX(-50%); }
+}
+
+
+@media(max-width:1000px){
+  #hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .about-inner{grid-template-columns:1fr;gap:3rem}
+  nav{padding:1rem 1.5rem}
+  nav .nav-links{display:none}
+  .hero-terminal{ width: min(400px); top: 30%; left: 75%;}
+}
+@media(max-width:600px){
+  #hero{grid-template-columns:1fr; height: fit-content;}
+  .hero-terminal{ width: min(400px); top: 125%; left: 60%;}
+  .marquee-wrap{margin-top: -3px;}
+  nav{display: hidden;}
 }

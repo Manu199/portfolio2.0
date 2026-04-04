@@ -1,0 +1,116 @@
+#about{
+    background:var(--panel);
+    color:var(--text-dark);
+    padding:7rem 2.5rem
+}
+.about-inner{
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:6rem;
+    align-items:start
+}
+.about-tag{
+    font-family:'Space Mono',monospace;
+    font-size:0.7rem;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--muted);  
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:8px
+}
+.about-tag::before{
+    content:'//';
+    color:var(--accent);
+    font-style:italic
+}
+.about-heading{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:4.5rem;
+    line-height:0.92;
+    letter-spacing:-1px;
+    color:var(--dark);
+    margin-bottom:2rem
+}
+.about-img-block{
+    width:100%;
+    aspect-ratio:3/4;
+    background:var(--dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:6rem;color:var(--lime);
+    letter-spacing:-2px;
+    position:relative;
+    overflow:hidden
+}
+.about-img-block::after{
+    content:'Full-Stack Developer';
+    position:absolute;
+    bottom:1.2rem;
+    left:1.2rem;
+    right:1.2rem;
+    font-family:'Space Mono',monospace;
+    font-size:0.68rem;
+    color:rgba(255,255,255,0.5);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding-top:0.8rem
+}
+.about-main p{
+    font-size:1.05rem;
+    line-height:1.85;
+    color:#444;
+    margin-bottom:1.2rem;
+    font-weight:300
+}
+.about-main p strong{
+    color:var(--dark);
+    font-weight:600
+}
+.about-values{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    margin-top:2rem
+}
+.value-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.9rem 0;
+    border-bottom:1px solid var(--border-light);
+    font-size:0.9rem
+}
+.value-row:first-child{
+    border-top:1px solid var(--border-light)
+}
+.value-name{
+    font-weight:600;
+    color:var(--dark);
+    min-width:80px
+}
+.value-bar{
+    flex:1;
+    height:3px;
+    background:#e0e0e0;
+    margin:0 1.5rem;
+    border-radius:2px;
+    overflow:hidden
+}
+.value-fill{
+    height:100%;
+    background:var(--dark);
+    border-radius:2px;
+    transition:width 1.2s cubic-bezier(.2,.8,.2,1);
+}
+.value-pct{
+    font-family:'Space Mono',monospace;
+    font-size:0.75rem;
+    color:var(--muted)
+}

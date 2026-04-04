@@ -12,42 +12,16 @@ document.addEventListener('mousemove',e=>{
   requestAnimationFrame(tick);
 })();
 
-function getCV(id){ return document.getElementById(id).textContent; }
 
-let lang = 'IT';
-const overlay = document.getElementById('cvOverlay');
-const frame   = document.getElementById('cvFrame');
+// Hover on lime btn
+document.querySelectorAll(".btn-lime").forEach(btn => {
+    btn.addEventListener("mouseenter", () => {
+        cur.style.backgroundColor = "black";
+        ring.style.borderColor = "black";
+    });
 
-function openCV(){
-  document.body.style.overflow='hidden';
-  overlay.classList.add('open');
-  loadCV('IT');
-}
-function closeCV(){
-  overlay.classList.remove('open');
-  document.body.style.overflow='';
-}
-function switchLang(l){
-  if(lang===l) return;
-  loadCV(l);
-}
-function loadCV(l){
-  lang=l;
-  document.getElementById('btnIT').classList.toggle('active',l==='IT');
-  document.getElementById('btnEN').classList.toggle('active',l==='EN');
-  document.getElementById('cvLangLabel').textContent=l==='IT'?'Italian':'English';
-  frame.srcdoc=getCV('cv'+l);
-}
-function downloadCV(){
-  const content=getCV('cv'+lang+'p');
-  const filename='CV-Manvinder-Singh-'+lang+'.html';
-  const blob=new Blob([content],{type:'text/html;charset=utf-8'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');
-  a.href=url; a.download=filename;
-  document.body.appendChild(a); a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}
-overlay.addEventListener('click',e=>{if(e.target===overlay)closeCV();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCV();});
+    btn.addEventListener("mouseleave", () => {
+        cur.style.backgroundColor = "#C8FF00";
+        ring.style.borderColor = "#C8FF00";
+    });
+});
