@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/aboutme.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
     <title>Manvinder - Full Stack Web Developer</title>
 </head>
@@ -112,6 +113,9 @@
             <span class="marquee-item">n8n</span><span class="marquee-sep">✦</span>
         </div>
     </div>
+
+
+    <!-- ABOUT ME -->
     <section id="about">
         <div class="about-inner">
             <div class="about-sidebar reveal-left">
@@ -148,7 +152,90 @@
             </div>
         </div>
     </section>
-    <!-- ABOUT -->
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="proj-header reveal">
+            <div>
+                <div class="sec-tag">Selected work</div>
+                <div class="proj-title">WHAT I'VE<br>BUILT.</div>
+            </div>
+            <div class="proj-counter">03</div>
+        </div>
+
+        <div class="projects-list">
+
+            <!-- PROGETTO 1 -->
+            <div class="project-item reveal">
+                <div class="pi-num">01</div>
+                <div>
+                    <div class="pi-title">HOMELAB PROXMOX</div>
+                    <div class="pi-desc">
+                        Self-hosted infrastructure with Proxmox: containerized services including Nextcloud and WireGuard VPN with remote secure access and monitoring
+                    </div>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Proxmox</span>
+                        <span class="pi-tag">Docker</span>
+                        <span class="pi-tag">WireGuard</span>
+                        <span class="pi-tag">Nextcloud</span>
+                        <span class="pi-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="pi-right">
+                    <span class="pi-year">2024</span>
+                    <span class="pi-arrow">↗</span>
+                    <div class="pi-color" style="background:var(--lime)"></div>
+                </div>
+            </div>
+
+            <!-- PROGETTO 2 -->
+            <div class="project-item reveal">
+                <div class="pi-num">02</div>
+                <div>
+                    <div class="pi-title">SELF-HOSTED WEBSITE</div>
+                    <div class="pi-desc">
+                        Personal website hosted on Raspberry Pi with Nginx, custom domain, SSL configuration and remote deployment management
+                    </div>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Raspberry Pi</span>
+                        <span class="pi-tag">Nginx</span>
+                        <span class="pi-tag">SSL</span>
+                        <span class="pi-tag">DNS</span>
+                        <span class="pi-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="pi-right">
+                    <span class="pi-year">2024</span>
+                    <span class="pi-arrow">↗</span>
+                    <div class="pi-color" style="background:var(--accent)"></div>
+                </div>
+            </div>
+
+            <!-- PROGETTO 3 -->
+            <div class="project-item reveal">
+                <div class="pi-num">03</div>
+                <div>
+                    <div class="pi-title">BOOLBNB</div>
+                    <div class="pi-desc">
+                        Full-stack web app for apartment booking with fake payment system via API and map integration showing approximate locations for privacy. Includes user and host dashboards
+                    </div>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Vue / Vite</span>
+                        <span class="pi-tag">Laravel</span>
+                        <span class="pi-tag">API</span>
+                        <span class="pi-tag">Maps</span>
+                        <span class="pi-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="pi-right">
+                    <span class="pi-year">2023</span>
+                    <span class="pi-arrow">↗</span>
+                    <div class="pi-color" style="background:#818CF8"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
      <script src="/js/script.js"></script>
 </body>
 </html>

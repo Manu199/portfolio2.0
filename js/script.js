@@ -25,3 +25,24 @@ document.querySelectorAll(".btn-lime").forEach(btn => {
         ring.style.borderColor = "#C8FF00";
     });
 });
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*100);obs.unobserve(e.target)}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal,.reveal-left').forEach(el=>obs.observe(el));
+const barObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.value-fill').forEach(b=>b.style.width=b.dataset.w+'%');
+      barObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.3});
+  document.querySelectorAll('.about-values').forEach(el=>barObs.observe(el));
+  document.querySelectorAll('a,button,.project-item,.sk-item').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='20px';cur.style.height='20px';ring.style.opacity='0.15'});
+  el.addEventListener('mouseleave',()=>{cur.style.width='12px';cur.style.height='12px';ring.style.opacity='0.4'});
+});
+

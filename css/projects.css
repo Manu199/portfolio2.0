@@ -1,0 +1,137 @@
+#projects {
+    background: var(--dark);
+    padding: 7rem 2.5rem;
+}
+
+.proj-header {
+    max-width: 1100px;
+    margin: 0 auto 4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.sec-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--lime);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.sec-tag::before {
+    content: '//';
+}
+
+.proj-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.proj-counter {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.06);
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+/* LISTA PROGETTI */
+.projects-list {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-dark);
+    cursor: default;
+}
+
+.project-item:first-child {
+    border-top: 1px solid var(--border-dark);
+}
+
+.project-item:hover .pi-num {
+    color: var(--lime);
+}
+
+.project-item:hover .pi-arrow {
+    transform: translate(4px, -4px);
+    color: var(--lime);
+}
+
+.pi-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.15);
+    transition: color 0.2s;
+    letter-spacing: 1px;
+}
+
+.pi-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+
+.pi-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+}
+
+.pi-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 0.6rem;
+}
+
+.pi-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--border-dark);
+    color: var(--muted);
+}
+
+.pi-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.pi-year {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+}
+
+.pi-arrow {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.pi-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
