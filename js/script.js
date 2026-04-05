@@ -13,16 +13,16 @@ document.addEventListener('mousemove',e=>{
 })();
 
 
-// Hover on lime btn
-document.querySelectorAll(".btn-lime").forEach(btn => {
+// Hover on main btn
+document.querySelectorAll(".btn-main").forEach(btn => {
     btn.addEventListener("mouseenter", () => {
         cur.style.backgroundColor = "black";
         ring.style.borderColor = "black";
     });
 
     btn.addEventListener("mouseleave", () => {
-        cur.style.backgroundColor = "#C8FF00";
-        ring.style.borderColor = "#C8FF00";
+        cur.style.backgroundColor = "var(--main)";
+        ring.style.borderColor = "var(--main)";
     });
 });
 

@@ -4,10 +4,16 @@
     grid-template-columns: 1fr 440px;
     position: relative;
     overflow: hidden;
-    /* z-index: 999; */
 }
+
+/* dot-grid background on hero-left */
+.hero-left{
+  background-image:radial-gradient(rgba(255,255,255,0.07) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+
 .hero-left {
-    padding: 6rem 5rem 4rem;
+    padding: 6rem 5rem  10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,7 +25,7 @@
     font-size: 0.72rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--lime);margin-bottom:1.5rem;
+    color: var(--main);margin-bottom:1.5rem;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -29,7 +35,7 @@
     display: block;
     width: 32px;
     height: 1px;
-    background: var(--lime);
+    background: var(--main);
 }
 h1 {
     font-family: 'Bebas Neue',sans-serif;
@@ -42,8 +48,8 @@ h1 .outline {
     -webkit-text-stroke: 1.5px #fff;
     color: transparent;
 }
-h1 .lime {
-    color: var(--lime);
+h1 .main {
+    color: var(--main);
 }
 button{
     cursor: none;
@@ -62,8 +68,8 @@ button{
     margin-top: 2.5rem;
     flex-wrap: wrap;
 }
-.btn-lime {
-    background: var(--lime);
+.btn-main {
+    background: var(--main);
     color: var(--dark);
     padding: 0.85rem 2rem;
     font-weight: 700;
@@ -75,10 +81,10 @@ button{
     clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
     cursor: none;
 }
-/* .btn-lime:hover, #cursor{
+/* .btn-main:hover, #cursor{
     background-color: black;
 } */
-.btn-lime:hover {
+.btn-main:hover {
     transform: translate(-2px,-2px);
     box-shadow: 4px 4px 0 rgba(200,255,0,0.3);
 }
@@ -95,7 +101,7 @@ button{
     transition: border-color 0.2s,background 0.2s;
 }
 .btn-contacts:hover {
-    border-color: var(--lime);
+    border-color: var(--main);
     background: rgba(200,255,0,0.06);
 }
 .hero-right {
@@ -104,7 +110,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 8rem 2.5rem 4rem;
+    padding: 8rem 2.5rem 35%;
     position: relative;
     overflow: hidden;
     z-index: -1;
@@ -163,8 +169,8 @@ button{
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--lime);
-    box-shadow: 0 0 8px var(--lime);
+    background: var(--main);
+    box-shadow: 0 0 8px var(--main);
 }
 .hero-stat-row {
     display: flex;
@@ -176,7 +182,7 @@ button{
 .hs-num {
     font-family: 'Bebas Neue',sans-serif;
     font-size: 2.8rem;
-    color: var(--lime);
+    color: var(--main);
     line-height: 1;
 }
 .hs-label {
@@ -187,7 +193,7 @@ button{
     text-transform: uppercase;
 }
 .marquee-wrap {
-    background: var(--lime);
+    background: var(--main);
     color: var(--dark);
     padding: 0.9rem 0;
     overflow: hidden;
@@ -233,4 +239,21 @@ button{
 
 @media(max-width: 800px){
     .hero-terminal{display: none;}
+}
+
+
+@media(max-width: 1600px){
+    h1{
+        font-size: 500%;
+    }
+}
+@media(max-width: 1200px){
+    h1{
+        font-size: 300%;
+    }
+
+
+    .hero-left p{
+        font-size: 0.7rem;
+    }
 }

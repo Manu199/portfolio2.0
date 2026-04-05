@@ -27,5 +27,5 @@ nav{
     text-transform:uppercase;
     transition:color 0.2s}
 .nav-links a:hover{
-    color:var(--lime)
+    color:var(--main)
 }
