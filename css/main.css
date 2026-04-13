@@ -234,6 +234,10 @@ button{
     .hero-right{display:none}
     .hero-terminal{ width: min(400px); top: 30%; left: 75%;}
     .about-inner{grid-template-columns:1fr;gap:3rem}
+    .sk-grid{grid-template-columns:repeat(2,1fr)}
+    .project-item{grid-template-columns:40px 1fr;gap:1rem}
+    .pi-right{display:none}
+    .proj-header{align-items:flex-start}
     
 }
 @media(max-width:600px){
@@ -242,6 +246,8 @@ button{
   .marquee-wrap{margin-top: -3px;}
   nav{display: hidden;}
   h1{font-size: 400%;}
+  .sk-grid{grid-template-columns:1fr !important}
+  .ft-copy{font-size: 0.45rem !important}
 }
 
 @media(max-width: 800px){
