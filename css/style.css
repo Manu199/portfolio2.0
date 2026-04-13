@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+}
+html{
+  scroll-behavior: smooth;
 }
 :root{
     --main:#F97316;
@@ -112,7 +115,7 @@ body{
 .reveal{
   opacity:0;
   transform:translateY(40px);
-  transition:opacity 0.7s ease,transform 0.7s ease
+  transition:opacity 1s ease,transform 1s ease
 }
 .reveal.visible{
   opacity:1;
@@ -121,7 +124,7 @@ body{
 .reveal-left{
   opacity:0;
   transform:translateX(-30px);
-  transition:opacity 0.7s ease,transform 0.7s ease
+  transition:opacity 1s ease,transform 1s ease
 }
 .reveal-left.visible{
   opacity:1;

@@ -11,6 +11,9 @@
     gap:6rem;
     align-items:start
 }
+.about-sidebar{
+    overflow: auto;
+}
 .about-tag{
     font-family:'Space Mono',monospace;
     font-size:0.7rem;
@@ -35,9 +38,26 @@
     color:var(--dark);
     margin-bottom:2rem
 }
-.about-img-block{
+/* .about-img-block{
     width:100%;
     aspect-ratio:3/4;
+    background-image: url('../img/ms_dayal_logo_final2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:6rem;color:var(--main);
+    letter-spacing:-2px;
+    position:relative;
+    overflow:visible;
+} */
+ .about-img-block{
+    width:100%;
+    aspect-ratio:3/4;
+    content: "MD";
     background:var(--dark);
     display:flex;
     align-items:center;

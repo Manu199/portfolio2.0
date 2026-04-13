@@ -1,0 +1,225 @@
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* OVERLAY */
+.cv-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cv-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* MODAL */
+.cv-modal {
+    width: min(860px, 100%);
+    height: 88vh;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(28px);
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.8);
+}
+
+.cv-overlay.open .cv-modal {
+    transform: translateY(0);
+}
+
+/* TOPBAR */
+.cv-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.85rem 1.2rem;
+    background: #1a1a1a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+    flex-shrink: 0;
+}
+
+.cv-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cv-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.cv-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    margin-left: 10px;
+}
+
+/* TOGGLE */
+.cv-toggle {
+    display: flex;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cv-toggle-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+    padding: 0.38rem 0.9rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.35);
+    border: none;
+    cursor: pointer;
+
+    transition: background 0.2s, color 0.2s;
+}
+
+.cv-toggle-btn.active {
+    background: var(--main);
+    color: var(--dark);
+}
+
+/* CLOSE BUTTON */
+.cv-close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 1.2rem;
+    line-height: 1;
+
+    padding: 0.3rem 0.4rem;
+    margin-left: 8px;
+
+    transition: color 0.2s;
+}
+
+.cv-close-btn:hover {
+    color: #fff;
+}
+
+/* FRAME */
+.cv-frame-wrap {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.cv-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #fff;
+    display: block;
+}
+
+/* BOTTOM BAR */
+.cv-bottombar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.85rem 1.2rem;
+    background: #1a1a1a;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    flex-shrink: 0;
+}
+
+.cv-status {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.cv-status b {
+    color: var(--main);
+    font-weight: 700;
+}
+
+/* DOWNLOAD BUTTON */
+.cv-dl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    background: var(--main);
+    color: var(--dark);
+
+    padding: 0.55rem 1.3rem;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    border: none;
+    cursor: pointer;
+
+    clip-path: polygon(
+        0 0,
+        calc(100% - 8px) 0,
+        100% 8px,
+        100% 100%,
+        8px 100%,
+        0 calc(100% - 8px)
+    );
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cv-dl-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 rgba(200, 255, 0, 0.3);
+}

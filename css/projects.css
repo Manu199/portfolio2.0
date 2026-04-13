@@ -16,7 +16,7 @@
     font-size: 0.7rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--lime);
+    color: var(--main);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -64,12 +64,12 @@
 }
 
 .project-item:hover .pi-num {
-    color: var(--lime);
+    color: var(--main);
 }
 
 .project-item:hover .pi-arrow {
     transform: translate(4px, -4px);
-    color: var(--lime);
+    color: var(--main);
 }
 
 .pi-num {

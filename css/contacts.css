@@ -1,0 +1,101 @@
+#contact {
+  background: var(--main);
+  padding: 8rem 2.5rem;
+  color: var(--dark);
+}
+
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ct-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ct-label::before {
+  content: '//';
+  font-style: italic;
+}
+
+.ct-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.88;
+  letter-spacing: -2px;
+  color: var(--dark);
+  margin-bottom: 3rem;
+}
+
+.ct-heading span {
+  -webkit-text-stroke: 1.5px var(--dark);
+  color: transparent;
+}
+
+.ct-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ct-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ct-link {
+  background: var(--dark);
+  color: var(--main);
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.ct-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.ct-link.ghost {
+  background: transparent;
+  color: var(--dark);
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+  clip-path: none;
+}
+
+.ct-link.ghost:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.ct-mail {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ct-mail:hover {
+  color: var(--dark);
+}

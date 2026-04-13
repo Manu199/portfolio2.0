@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV – Manvinder Singh</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #222; background: #fff; }
+
+  .page { max-width: 800px; margin: 0 auto; padding: 36px 48px 40px 48px; }
+
+  .header { border-bottom: 3px solid #1a6fa8; padding-bottom: 14px; margin-bottom: 22px; }
+  .header h1 { font-size: 28pt; font-weight: 700; color: #1a6fa8; letter-spacing: 1px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 7px; font-size: 9.5pt; color: #444; }
+  .contact-row a { color: #1a6fa8; text-decoration: none; }
+  .contact-row span::before { content: "• "; color: #1a6fa8; }
+  .contact-row span:first-child::before { content: ""; }
+
+  .section-title {
+    font-size: 11.5pt; font-weight: 700; color: #1a6fa8;
+    text-transform: uppercase; letter-spacing: 1.2px;
+    border-bottom: 1.5px solid #c8dff0;
+    padding-bottom: 4px; margin-top: 22px; margin-bottom: 10px;
+  }
+
+  .profile-text { line-height: 1.6; color: #333; }
+
+  .exp-block { margin-bottom: 16px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-title { font-weight: 700; font-size: 11pt; color: #1a2e40; }
+  .exp-company { font-weight: 600; color: #1a6fa8; font-size: 10.5pt; }
+  .exp-date { font-size: 9.5pt; color: #666; white-space: nowrap; }
+  .exp-location { font-size: 9.5pt; color: #888; margin-bottom: 5px; }
+  ul.tasks { margin-left: 18px; margin-top: 5px; }
+  ul.tasks li { margin-bottom: 3px; line-height: 1.5; }
+
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; }
+  .skill-category h4 { font-size: 10pt; font-weight: 700; color: #1a6fa8; margin-bottom: 4px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag {
+    background: #e8f2fb; color: #1a4f7a; border-radius: 4px;
+    padding: 2px 9px; font-size: 9pt; font-weight: 600;
+  }
+
+  .edu-block { margin-bottom: 10px; }
+  .edu-title { font-weight: 700; font-size: 10.5pt; color: #1a2e40; }
+  .edu-school { color: #1a6fa8; font-size: 10pt; }
+  .edu-date { font-size: 9.5pt; color: #666; }
+
+  .project-block { margin-bottom: 12px; }
+  .project-name { font-weight: 700; color: #1a2e40; }
+  .project-tech { font-size: 9pt; color: #888; margin-bottom: 3px; }
+
+  .lang-row { display: flex; gap: 24px; }
+  .lang-name { font-weight: 600; }
+  .lang-level { color: #666; font-size: 9.5pt; }
+
+  @media print {
+    body { font-size: 10pt; }
+    .page { padding: 20px 36px; }
+    a { color: #1a6fa8 !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Manvinder Singh</h1>
+    <div class="contact-row">
+      <span>Castel Mella (BS), Italy</span>
+      <span>+39 328 728 4276</span>
+      <span><a href="#" class="protected-email" data-user="manu199gh" data-domain="gmail.com">click to reveal email</a></span>
+      <span><a href="https://www.linkedin.com/in/manvinder-singh-dayal/"target="_blank">LinkedIn</a></span>
+      <span><a href="https://github.com/Manu199"target="_blank">GitHub – Manu199</a></span>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section-title">Profile</div>
+  <p class="profile-text">
+    Junior IT Technician &amp; Full Stack Web Developer with hands-on experience in web development
+    (PHP/Laravel, Vue.js, MySQL) and a strong passion for IT infrastructure. I independently manage
+    a homelab based on <strong>Proxmox</strong> where I experiment with virtualisation, containerisation
+    with <strong>Docker</strong>, advanced networking and VPN. Eager learner, detail-oriented and
+    proactive in solving technical problems.
+  </p>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section-title">Professional Experience</div>
+
+  <div class="exp-block">
+    <div class="exp-header">
+      <div>
+        <span class="exp-title">Print Production Operator</span>&nbsp;·&nbsp;
+        <span class="exp-company">MSPrint Lario</span>
+      </div>
+      <span class="exp-date">Feb 2026 – Present</span>
+    </div>
+    <div class="exp-location">Brescia area, IT</div>
+    <ul class="tasks">
+      <li>Operating industrial digital and offset printing machines for high-volume production runs</li>
+      <li>Setting up and calibrating equipment for each job: colour profiles, paper formats and print parameters</li>
+      <li>Performing quality control checks on printed materials to ensure colour accuracy and consistency</li>
+      <li>Managing print queue and production scheduling to meet client deadlines</li>
+      <li>Carrying out routine maintenance and first-level troubleshooting on printing equipment</li>
+      <li>Collaborating with the production team to optimise workflow and minimise material waste</li>
+    </ul>
+  </div>
+
+  <div class="exp-block">
+    <div class="exp-header">
+      <div>
+        <span class="exp-title">IT Support Technician</span>
+        &nbsp;·&nbsp;
+        <span class="exp-company">S.P. Senior Secondary School</span>
+      </div>
+      <span class="exp-date">Feb 2025 – Sep 2025</span>
+    </div>
+    <div class="exp-location">Balachaur, IN</div>
+    <ul class="tasks">
+      <li>Managed and monitored the network infrastructure of school IT labs ensuring reliable connectivity</li>
+      <li>Installed, configured and updated hardware, software and peripherals across lab workstations</li>
+      <li>Troubleshot network issues, system errors and equipment failures to minimise downtime during lessons</li>
+      <li>Performed routine maintenance on routers, switches and lab devices</li>
+      <li>Provided technical support to teachers and students, ensuring smooth delivery of lessons</li>
+      <li>Coordinated and tracked support requests via Slack and Microsoft Teams</li>
+    </ul>
+  </div>
+
+  <div class="exp-block">
+    <div class="exp-header">
+      <div>
+        <span class="exp-title">Jr. Full Stack Web Developer Trainee</span>
+        &nbsp;·&nbsp;
+        <span class="exp-company">Boolean (Full Stack Master)</span>
+      </div>
+      <span class="exp-date">Jul 2023 – Jan 2024</span>
+    </div>
+    <div class="exp-location">Brescia, IT &nbsp;|&nbsp; HTML · CSS · JS · Vue.js · PHP · Laravel · MySQL · Git</div>
+    <ul class="tasks">
+      <li>Built responsive front-end interfaces using HTML, CSS, JavaScript and Vue.js + Vite</li>
+      <li>Designed and implemented back-end systems with PHP and Laravel: routing, authentication, REST APIs</li>
+      <li>Managed relational databases with MySQL: schema design, query optimisation, data security</li>
+      <li>Capstone project: Airbnb-inspired booking platform built in a team using Vue.js and Laravel, featuring dynamic search and service filters</li>
+      <li>Used Git/GitHub for version control and team collaboration</li>
+    </ul>
+  </div>
+
+  <!-- HOMELAB & PERSONAL PROJECTS -->
+  <div class="section-title">Homelab &amp; Personal Projects</div>
+
+  <div class="project-block">
+    <div class="project-name">🖥️ Homelab on Proxmox VE</div>
+    <div class="project-tech">Proxmox · Linux (Ubuntu/Debian) · LXC · KVM · Networking</div>
+    <ul class="tasks">
+      <li>Set up and manage a Proxmox server with VMs and LXC containers for isolated test and production environments</li>
+      <li>Deployed self-hosted services and managed virtualisation resources (CPU pinning, storage, backups)</li>
+      <li>Advanced troubleshooting: resolved kernel panic during Ubuntu Server installation, handled kernel module limitations in LXC environments</li>
+    </ul>
+  </div>
+
+  <div class="project-block">
+    <div class="project-name">🐳 Containerisation with Docker</div>
+    <div class="project-tech">Docker · Docker Compose · Linux</div>
+    <ul class="tasks">
+      <li>Deployed multi-container applications using Docker Compose on Linux environments</li>
+      <li>Managed volumes, bridge networks and persistent container configurations</li>
+    </ul>
+  </div>
+
+  <div class="project-block">
+    <div class="project-name">🔐 VPN &amp; Networking</div>
+    <div class="project-tech">WireGuard · PiVPN · DDNS · No-IP · Port Forwarding · DNS</div>
+    <ul class="tasks">
+      <li>Set up WireGuard VPN via PiVPN on a Proxmox LXC container for secure remote access to the home network</li>
+      <li>Configured DDNS with No-IP, port forwarding and Wake-on-LAN for remote PC access</li>
+      <li>Managed network settings on ZTE router, firewall rules and custom DNS configurations</li>
+    </ul>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h4>Infrastructure &amp; DevOps</h4>
+      <div class="skill-tags">
+        <span class="tag">Proxmox VE</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Docker Compose</span>
+        <span class="tag">Linux (Ubuntu/Debian)</span>
+        <span class="tag">LXC / KVM</span>
+        <span class="tag">WireGuard VPN</span>
+        <span class="tag">Git / GitHub</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h4>Networking</h4>
+      <div class="skill-tags">
+        <span class="tag">TCP/IP</span>
+        <span class="tag">DNS</span>
+        <span class="tag">DDNS / No-IP</span>
+        <span class="tag">Port Forwarding</span>
+        <span class="tag">Firewall</span>
+        <span class="tag">Wake-on-LAN</span>
+        <span class="tag">FTP</span>
+      </div>
+    </div>
+    <div class="skill-category" style="margin-top:10px">
+      <h4>Web Development</h4>
+      <div class="skill-tags">
+        <span class="tag">PHP</span>
+        <span class="tag">Laravel</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">Vite</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">REST API</span>
+      </div>
+    </div>
+    <div class="skill-category" style="margin-top:10px">
+      <h4>Tools &amp; Other</h4>
+      <div class="skill-tags">
+        <span class="tag">Slack</span>
+        <span class="tag">Microsoft Teams</span>
+        <span class="tag">Microsoft 365</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">FileZilla</span>
+        <span class="tag">Adobe</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section-title">Education &amp; Training</div>
+
+  <div class="edu-block">
+    <div class="edu-title">Technical Diploma in Computer Science &amp; Telecommunications (ongoing – Year 3)</div>
+    <div class="edu-school">ITIS Castelli – Brescia, IT</div>
+    <span class="edu-date">In progress</span>
+    <p style="margin-top:3px; font-size:9.5pt; color:#555;">Technical programme covering computer systems, networking, programming and telecommunications.</p>
+  </div>
+
+  <div class="edu-block">
+    <div class="edu-title">Full Stack Web Developer Master</div>
+    <div class="edu-school">Boolean Careers</div>
+    <span class="edu-date">Jul 2023 – Jan 2024</span>
+    <p style="margin-top:3px; font-size:9.5pt; color:#555;">Intensive full-time programme covering front-end and back-end web development, with a team final project.</p>
+  </div>
+
+  <!-- LANGUAGES -->
+  <div class="section-title">Languages</div>
+  <div class="lang-row">
+    <div class="lang-item"><span class="lang-name">Italian</span> <span class="lang-level">– Fluent</span></div>
+    <div class="lang-item"><span class="lang-name">English</span> <span class="lang-level">– Intermediate (B1/B2)</span></div>
+    <div class="lang-item"><span class="lang-name">Punjabi / Hindi</span> <span class="lang-level">– Native</span></div>
+  </div>
+
+</div>
+
+  <script>
+    // Email protection: assembles the address only when the user clicks
+    document.querySelectorAll('.protected-email').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var user   = this.getAttribute('data-user');
+        var domain = this.getAttribute('data-domain');
+        var email  = user + '@' + domain;
+        this.href      = 'mailto:' + email;
+        this.innerText = email;
+      });
+    });
+  </script>
+</body>
+</html>
