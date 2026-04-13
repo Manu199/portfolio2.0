@@ -246,8 +246,8 @@ button{
   .marquee-wrap{margin-top: -3px;}
   nav{display: hidden;}
   h1{font-size: 400%;}
-  .sk-grid{grid-template-columns:1fr !important}
-  .ft-copy{font-size: 0.45rem !important}
+  .sk-grid{grid-template-columns:1fr}
+  .ft-copy{font-size: 0.45rem }
 }
 
 @media(max-width: 800px){
