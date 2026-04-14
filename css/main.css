@@ -247,11 +247,18 @@ h1 .main {
   nav{display: hidden;}
   h1{font-size: 400%;}
   .sk-grid{grid-template-columns:1fr}
-  .ft-copy{font-size: 0.45rem }
+  .ft-copy{font-size: 0.45rem; flex-direction: column;}
 }
 
 @media(max-width: 800px){
+    .ft-copy{font-size: 0.45rem; flex-direction: column;}
     .hero-terminal{display: none;}
+    .copyright{
+    font-size: 1.9em;
+    position: relative;
+    top: 1px;
+    }
+    
 }
 
 
