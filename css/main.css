@@ -5,10 +5,11 @@
     position: relative;
     overflow: hidden;
 }
-@media (hover: hover){
-  *:hover{
-    cursor: none;
-  }
+.custom-cursor * {
+  cursor: none;
+}
+body {
+  cursor: auto;
 }
 
 /* dot-grid background on hero-left */
@@ -56,9 +57,7 @@ h1 .outline {
 h1 .main {
     color: var(--main);
 }
-button{
-    cursor: none;
-}
+
 .hero-desc {
     font-size: 0.95rem;
     color: rgba(255,255,255,0.5);

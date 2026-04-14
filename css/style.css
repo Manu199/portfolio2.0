@@ -2,11 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth !important;
 }
-html{
-  scroll-behavior: smooth;
-}
+
 :root{
     --main:#F97316;
     --dark:#0D0D0D;
@@ -25,7 +22,7 @@ body{
     background: var(--dark);
     color: var(--text-light);
     /* overflow: hidden; */
-    cursor: none;
+    cursor: auto;
 }
 #cursor{
     width: 12px;
